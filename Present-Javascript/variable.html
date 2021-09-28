@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable</title>
+</head>
+<body>
+    <script>
+        document.write("var can access inside as well as outside box<br>");
+        for(var i=0;i<5;i++)
+         {
+          console.log(i);  //i can be used here
+         }
+        console.log(i);   //i also can be used here
+    </script>
+    
+    <script>
+        document.write("<br> using let variable declared a {} block cannot be accessed from outside the block");
+        let k=['java','c','python','html']
+        for(let j of k)
+         {
+          console.log(j);   //j can be used here
+         }
+        console.log(j);    // j can not be used here
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoWhile Loop</title>
+</head>
+<body>
+    <h3>Armstrong number</h3>
+    <p>Armstrong no means the summation of cubes of all digit of the number should be exactly that number</p>
+    <p>153=(1*1*1)+(5*5*5)+(3*3*3)<br>153=1+125+27=153</p>
+    <p>Math.floor is method returns the integer less that the Number</p>
+    <script>
+        var n,n1,r,sum;
+        sum=0;
+        n = parseInt(prompt("Enter a Number : "));
+        n1=n;
+        do
+        {
+          r=n%10;
+          sum=sum+(r*r*r);
+          n=Math.floor(n/10);
+        }while(n>0);
+        if(n1==sum)
+         document.write("Number is Armstrong : "+n1);
+         else
+         document.write("Number is not Armstrong : "+n1);
+</script>
+</body>
+</html>

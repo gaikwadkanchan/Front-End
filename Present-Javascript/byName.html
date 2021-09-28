@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function langs()
+        {
+            var lan = document.getElementsByName("lang");
+            alert("total Languages : "+ lan.length);
+        }
+    </script>
+</head>
+<body>
+    <form>
+        Select your lang for communication <br><br>
+        English : <input type="radio" name="lang" value="English">
+        Hindi : <input type="radio" name="lang" value="Hindi">
+        Marathi : <input type="radio" name="lang" value="Marathi">
+        <input type="button" onclick="langs()" value="Total Lang">
+    </form>
+</body>
+</html>

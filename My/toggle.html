@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: red;
+            height: 146px;
+        }
+        .box{
+
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box">
+            <img id="myImage" src="https://source.unplash.com/960x520/?nature,water">
+            <button id="btn">Toggle</button>
+        </div>
+
+    </div>
+</body>
+<script>
+    myImage.style.width='146px';
+    myimage.style.height='16px';
+
+    btn.addEventlistener("click", ()=>
+    {
+        myImage.style.height='456px';
+    })
+</script>
+</html>

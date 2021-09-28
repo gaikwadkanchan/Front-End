@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HTML Content</h1>
+    <p>HTML is markup language</p>
+    <h2>Javascript Content</h2>
+    <p id="first">JavaScript is a scripting language</p>
+    <script>
+        var p=document.getElementsByTagName("p");
+        alert(p[0].innerHTML);
+        //alert(p[1].innerHTML);
+        document.getElementById("first").innerHTML="Content is updated";
+    </script>
+</body>
+</html>

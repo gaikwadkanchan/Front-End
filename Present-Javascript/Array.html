@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        document.write("Syntax");
+    var stud= new Array("Riya","Ishita","Shiva","Akshit","Riya","jiva");
+    document.write("<br>Methods of Array");
+    document.write("<br>Array length : "+stud.length);
+    document.write("<br>First index of Riya : "+stud.indexOf("Riya"));
+    document.write("<br>Last index of Riya : "+stud.lastIndexOf("Riya"));
+
+    document.write("<br><br>Iteration of array<br>");
+    for(var i=0;i<stud.length;i++)
+    {
+        document.write(stud[i] + "<br>");
+    }
+    
+    document.write("<br>Some Another operation");
+    stud.pop();
+    document.write("<br>After Removal of last element<br>");
+    for(var i=0;i<stud.length;i++)
+    {
+        document.write(stud[i] + "<br>");
+    }
+
+    stud.push("Advika");
+    document.write("<br>After adding of new element<br>");
+    for(var i=0;i<stud.length;i++)
+    {
+        document.write(stud[i] + "<br>");
+    }
+
+    stud.sort();
+    document.write("<br>After sorting<br>");
+    for(var i=0;i<stud.length;i++)
+    {
+        document.write(stud[i] + "<br>");
+    }
+
+    stud.reverse();
+    document.write("<br>After Reversing<br>");
+    for(var i=0;i<stud.length;i++)
+    {
+        document.write(stud[i] + "<br>");
+    }
+   
+    document.write("<br> Delete the perticular element from array<br>");
+    delete stud[4];
+    for(var i=0;i<stud.length;i++)
+    {
+        document.write(stud[i] + "<br>");
+    }
+
+    document.write("<br> splice is used to delete or replace element in array in splice 1 position indicate starting point and 2 indicate no of element to deleted");
+    var letter=["a","b","c","d","e","f","g"];
+    document.write("<br>" +letter.splice(5,2) );
+    document.write("<br>" +letter);    
+
+</script>
+</body>
+</html>

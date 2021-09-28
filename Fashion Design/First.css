@@ -1,0 +1,44 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    image-resolution: url;
+}
+ul{
+    background-color: blueviolet;
+    height: 20%;
+}
+
+li{
+    display: inline;
+    font-size: 20px;
+}
+
+.logo{
+    font-size: 20px;
+    color: #2ecc71;
+}
+.search{
+    font-size: 30px;
+    align-content: right;
+}
+
+header{
+    width: 100%;
+    display: flex;
+}
+header div{
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+header div img{
+    width: 50%;
+    height: 50%;
+    align-content: center;
+    transition: 0.4s ease-in-out;
+}
+footer{
+    width: 100%;
+    display:inline;   
+}

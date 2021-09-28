@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<script>
+    var rno,sname,Java,Python,C,total,avg;
+    rno = prompt("Enter roll No : ");
+    sname = prompt("Enter Name : ");
+    Java = parseInt(prompt("Enter a marks of java  : "));
+    Python = parseInt(prompt("Enter a marks of python  : "));
+    C = parseInt(prompt("Enter a marks of c  : "));
+    total= Java+Python+C;
+    avg = total/3;
+
+    document.write("RollNo : "+rno);
+    document.write("<br>Name : "+sname);
+    document.write("<br>Total : "+total);
+    document.write("<br>Average : "+avg);
+
+    if(Java>=40 && Python>=40 && C>=40)
+    {
+        if(avg>=80)
+        document.write("<br>Grade : A");
+        else if(avg>=60)
+        document.write("<br>Grade : B");
+        else if(avg>=40)
+        document.write("<br>Grade : C");
+    }
+    else
+    {
+     document.write("<br>Fail..");
+    }
+
+</script>
+
+</head>
+<body>
+    
+</body>
+</html>

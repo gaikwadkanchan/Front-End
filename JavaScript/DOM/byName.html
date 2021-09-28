@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Select Your Cource</p>
+    <p>
+    <input type="radio" name="rate" value="Python"> Python
+    <input type="radio" name="rate" value="Java"> Java
+    <input type="radio" name="rate" value="c++"> c++
+    <input type="radio" name="rate" value="R"> R
+    <input type="radio" name="rate" value="HTML"> HTML
+</p>
+<p>
+    <button id="btnRate">Submit</button>
+</p>
+<script>
+    let btn=document.getElementById('btnRate');
+    btn.addEventListener('click',() -> {
+rates.forEach(rate) => {
+    if(rate.checked){
+        aler("Your selected: $(rate.value)");
+    }
+});
+    
+    )}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <script>
+        document.write("By object Literal <br>");
+        emp = {id:101, name : "Deshmukh Hindavi",salary : 40000}
+        document.write(emp.id+" - "+emp.name+" - "+emp.salary);
+    </script>
+    <script>
+        document.write("<br><br> by creating instance of Object <br>");
+        var stud = new Object();
+        stud.id=101;
+        stud.name = "Deshmukh Hindavi";
+        stud.marks = 85;
+        document.write(stud.id+" - "+stud.name+" - "+stud.marks);
+    </script>
+
+  <script>
+    document.write("<br><br> by using an Object cunstructor <br>");
+    function student(sid,sname,smarks)
+    {
+     this.sid = sid;
+     this.sname = sname ;
+     this.smarks = smarks;
+    }
+    s=new student(1,"Deshmukh Shiva",90);
+    document.write(s.sid+" - "+s.sname+" - "+s.smarks);
+  </script>
+</body>
+</html>
